@@ -16,4 +16,4 @@ python3 main.py -t test -p Chart -b 11
 
 ## Output
 
-The results are saved in data/tasks/fixBug/chatgpt/<project>/<bugID>/info_<timestamp>.json
+The results are saved in `data/tasks/fixBug/chatgpt/<project>/<bugID>/info_<timestamp>.json`
