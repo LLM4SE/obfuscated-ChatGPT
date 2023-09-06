@@ -5,7 +5,7 @@ def methodAtLine(path, line):
   return obscure(path, path, line, "random", False, False, False, False, False, False)
 
 def obscure(path, outputPath, line = None, renameStrategy="random", removeComments=True, renameTypes=False, renameMethods=False, renameFields=True, renameVariables=True, renameParameters=True):
-  cmd = f"/Library/Java/JavaVirtualMachines/temurin-20.jdk/Contents/Home/bin/java -jar {os.path.join(os.path.dirname(__file__), '..', 'target/obscure-openai-0.1-SNAPSHOT-jar-with-dependencies.jar')} -p {path} -o {outputPath} -r {renameStrategy} "
+  cmd = f"{os.getenv('java20_home')}/bin/java -jar {os.path.join(os.path.dirname(__file__), '..', 'target/obscure-openai-0.1-SNAPSHOT-jar-with-dependencies.jar')} -p {path} -o {outputPath} -r {renameStrategy} "
 
   if line:
     cmd += f" -l {line}"

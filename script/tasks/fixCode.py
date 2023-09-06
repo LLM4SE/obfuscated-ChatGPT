@@ -36,7 +36,7 @@ def process_bug(bug, path_buggy_files):
                 continue
             original = obscure.methodAtLine(path_buggy_files, line)
 
-            out = os.path.join(os.path.dirname(__file__), '..', '..', 'data/tasks/fixBug/chatgpt', bug['project'], str(bug['bugId']))
+            out = os.path.join(os.path.dirname(__file__), '..', '..', 'data/tasks/patch/chatgpt', bug['project'], str(bug['bugId']))
 
             if not os.path.exists(out):
                 os.makedirs(out)
