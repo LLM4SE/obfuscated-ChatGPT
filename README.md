@@ -1,4 +1,8 @@
-# Obfuscation OpenAI
+# Obfuscated ChatGPT
+
+The purpose of this software is to provide a execution framework to make repetitable ChatGPT query in the context of Defects4J.
+This respository also provide a obfuscation mechnism for Java code which allows to rename variable, classes and parameters, as well as removing the comments.
+Multiple renaming strategies exsist: 1. Permute 2. Random name 3. Synonym.
 
 ## Usage
 

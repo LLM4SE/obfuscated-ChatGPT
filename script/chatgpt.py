@@ -1,9 +1,9 @@
 from dotenv import load_dotenv
 load_dotenv()
 
-import random
-import time
 import os
+from webdriver_manager.chrome import ChromeDriverManager
+ChromeDriverManager().install()
 from UnlimitedGPT import ChatGPT
 
 api_instance = ChatGPT(os.getenv('chatgpt_session'))
